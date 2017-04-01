@@ -1,0 +1,4 @@
+<resources>
+    <string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">KSfZHzEcUKZo3DGDVNBIbzUiPsCOVJX5cuxNG</string>
+    <string name="app_name">kpi365</string>
+</resources>

@@ -1,0 +1,37 @@
+1.loading加载问题
+2.任何改变zIndex时，切换回来时导致白屏，或不能点击的问题
+3.日历滑动的问题，无法设置日期后滚动到设置的日期～
+4.vim 测试
+ "rmc-date-picker": "^5.1.0",
+#code-push release kpi365 codePush/ios  1.0 --deploymentName kpi365-ios  --description "热更新测试"
+code-push release kpi365 codePush/android  1.0 --deploymentName kpi365-android  --description "热更新测试"
+code-push deployment ls kpi365 -k //查看key
+#code-push deployment clear kpi365 kpi365-ios
+
+
+
+code-push app相关命令
+
+add 在账号里面添加一个新的app
+remove 或者 rm 在账号里移除一个app
+rename 重命名一个存在app
+list 或则 ls 列出账号下面的所有app
+transfer 把app的所有权转移到另外一个账号
+
+部署app相关命令
+
+code-push deployment add <appName> 部署
+code-push deployment rename <appName> 重命名
+code-push deployment rm <appName> 删除部署
+code-push deployment ls <appName> 列出应用的部署情况
+code-push deployment ls <appName> -k 查看部署的key
+code-push deployment history <appName> <deploymentNmae> 查看历史版本(Production 或者 Staging)
+
+
+打包bundle结束后，就可以通过CodePush发布更新了。在控制台输入
+
+code-push release <应用名称> <Bundles所在目录> <对应的应用版本>
+    --deploymentName 更新环境
+    --description 更新描述
+    --mandatory 是否强制更新
+
