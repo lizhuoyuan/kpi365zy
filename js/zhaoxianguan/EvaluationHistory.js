@@ -1,5 +1,6 @@
 /**
  * Created by 卓原 on 2017/3/6.
+ * 评估历史页面
  */
 import React, {Component} from 'react';
 import {View, Text, Image, ListView} from 'react-native';
@@ -25,6 +26,7 @@ export default class EvaluationHistory extends Component {
         this.getDataFromFetch();
     }
 
+    //网络请求，获得评估历史
     getDataFromFetch() {
         let postData = {HrRecruitinfoSid: this.props.person.HrRecruitinfoSid}
         getPinggu(this.props.dispatch, postData);
@@ -44,7 +46,7 @@ export default class EvaluationHistory extends Component {
 
     render() {
         let {pinggus} = this.state;
-        return (<View style={{backgroundColor:'#f2f2f2'}}>
+        return (<View style={{backgroundColor:'#f2f2f2',flex:1}}>
                 <ListView
                     enableEmptySections={true}
                     showsVerticalScrollIndicator={false}

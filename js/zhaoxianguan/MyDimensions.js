@@ -12,6 +12,7 @@ const pi = PixelRatio.get();
 /*const apple6_width = 375;
  const myscale = width / apple6_width / 2;*/
 
+//获取屏幕尺寸
 export default {
     myscale: getChangeRatio() / 2,
     pi: pi,

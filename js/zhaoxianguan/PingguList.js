@@ -38,7 +38,7 @@ export default class PingguList extends Component {
                           style={{marginLeft:25*myscale,alignItems:"center",flex:0,height:60*myscale,marginTop:30*myscale}}>
                         <Image source={require('./img/tag-evaluate.png')}>
                             <View style={{flex:1,
-                        justifyContent:'center',alignItems:'center',marginLeft:25*myscale}}>
+                        justifyContent:'center',marginLeft:40*myscale}}>
                                 <Text
                                     style={{fontSize:28*myscale,color:'#1da9fc',}}>{youshi[i]}</Text></View>
                         </Image>
@@ -65,7 +65,7 @@ export default class PingguList extends Component {
                           style={{marginLeft:30*myscale,alignItems:"center",flex:0,height:60*myscale,marginTop:30*myscale}}>
                         <Image source={require('./img/tag-evaluate.png')}>
                             <View style={{flex:1,
-                        justifyContent:'center',alignItems:'center',marginLeft:25*myscale}}>
+                        justifyContent:'center',marginLeft:40*myscale}}>
                                 <Text
                                     style={{fontSize:28*myscale,color:'#f43f3c',}}>{lieshi[i]}</Text></View>
                         </Image>

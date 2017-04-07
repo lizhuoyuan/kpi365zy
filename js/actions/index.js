@@ -1201,7 +1201,7 @@ export function getPersons(dispatch, postData) {
                 let persons = [];
                 let shesize = dataTemp.shesize;
                 let xiaosize = dataTemp.xiaosize;
-                for (var i = 0; i < dataTemp.user.length; i++) {
+                for (let i = 0; i < dataTemp.user.length; i++) {
                     let p = dataTemp.user[i];
                     let person = {
                         alltime: p.alltime,

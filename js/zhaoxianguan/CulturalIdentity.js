@@ -1,5 +1,6 @@
 /**
  * Created by 卓原 on 2017/3/6.
+ * 文化评估页面
  */
 import React, {Component} from 'react';
 import {View, Text, StyleSheet, ScrollView} from 'react-native';
@@ -40,6 +41,7 @@ export default class CulturalIdentity extends Component {
         let postData = {
             ClsExamanswerType: this.props.person.result,
         };
+        //网络请求，获取文化评估结果
         getWenhua(this.props.dispatch, postData);
     }
 

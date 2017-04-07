@@ -1,6 +1,6 @@
 /**
  * Created by 卓原 on 2017/2/27.
- * 应聘者详情页面
+ * 应聘者详情页面，包含个人信息，评估历史和文化认同3个页面的总页面
  */
 
 import React, {Component} from 'react';

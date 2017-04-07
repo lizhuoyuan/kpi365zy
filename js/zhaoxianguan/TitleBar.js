@@ -1,3 +1,8 @@
+/**
+ * Created by 卓原 on 2017/3/6.
+ * 通用标题栏
+ * */
+
 import React, {Component,} from 'react';
 import {
     AppRegistry,

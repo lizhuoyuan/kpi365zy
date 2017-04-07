@@ -52,6 +52,9 @@ export default class InterviewEvaluation extends Component {
         }
     }
 
+    /**
+     * 提交评估的结果
+     */
     updatePinggu() {
         let {person} = this.props;
         youshis = this.state.youshi;

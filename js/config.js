@@ -7,8 +7,8 @@ let config = {
     // apiRoot: outsideConfig.apiRoot || 'https://www.okr365.com/smartx/webapi',
     // apiRoot2: outsideConfig.apiRoot || 'http://140.207.233.103:8080/smartx/webapi',
     //apiRoot: 'http://192.168.30.245:8080/smartx/webapi',
-    apiRootzy: 'http://192.168.30.250:8080/smartx/webapi/service/aolc',
-    //apiRootzy: 'https://www.kpi365.com:8443/smartx/webapi/service/aolc/',
+    //apiRootzy: 'http://192.168.30.250:8080/smartx/webapi/service/aolc',
+    apiRootzy: 'https://www.kpi365.com/smartx/webapi/service/aolc/',
 
     //'http://192.168.30.122:8080/smartx/webapi',
     //'http://140.207.233.103:8080/smartx/webapi',

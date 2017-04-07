@@ -1,5 +1,6 @@
 /**
  * Created by 卓原 on 2017/3/6.
+ * 个人资料页面
  */
 import React, {Component} from 'react';
 import {View, Text, StyleSheet, ScrollView, ListView} from 'react-native';
@@ -22,6 +23,7 @@ export default class PersonalProfile extends Component {
         this.getDataFromFetch();
     }
 
+    //更新页面信息
     componentWillReceiveProps(nextProps) {
         let {pageModel} = nextProps;
         let {zhaoxianguan} = pageModel;
@@ -32,6 +34,7 @@ export default class PersonalProfile extends Component {
         }
     }
 
+    //获取个人信息数据
     getDataFromFetch() {
         let postData = {
             ApplicantSid: this.props.person.ApplicantSid,
@@ -126,8 +129,7 @@ class SmallTitle extends Component {
     render() {
         return <View
             style={{backgroundColor:'#e5e5e5',height:88*myscale,paddingTop:44*myscale,
-            paddingLeft:40*myscale,paddingBottom:10*myscale,borderBottomWidth:1*myscale,
-            borderTopWidth:1*myscale,borderColor:'#e5e5e5'}}>
+            paddingLeft:40*myscale,paddingBottom:10*myscale }}>
             <Text style={{color:'#838f9f',fontSize:26*myscale}}>{this.props.text}</Text>
         </View>
     }

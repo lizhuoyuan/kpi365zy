@@ -1,7 +1,6 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
+ * Created by 卓原 on 2017/3/6.
+ * 招贤馆首页
  */
 
 import React, {Component} from 'react';
@@ -91,6 +90,9 @@ export default class Zhao extends Component {
         }
     }
 
+    /**
+     *进行网络请求，获取校招和社招人数 以及 本月的应聘者的信息
+     */
     getDataFromFetch() {
         let {pageModel} = this.props;
         let {PageData} = pageModel;
@@ -178,7 +180,6 @@ export default class Zhao extends Component {
                                           refreshing = {this.state.isRefreshing}
                                           onRefresh={this.getDataFromFetch.bind(this)}
                                            tintColor="#000"
-
                                             colors={['#000000']}
                                             progressBackgroundColor="#ffff00"
                                       />

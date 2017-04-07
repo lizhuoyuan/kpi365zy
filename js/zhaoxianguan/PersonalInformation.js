@@ -55,7 +55,7 @@ export default class PersonalInformation extends Component {
                                 </View>
                             </Image>
                             :
-                            < Image
+                            <Image
                                 source={require('./img/tag-green.png')}>
                                 <View style={{flex:1,justifyContent:'center'}}>
                                     <Text
@@ -99,8 +99,9 @@ export default class PersonalInformation extends Component {
                         style={{marginVertical:15*myscale,paddingHorizontal:30*myscale,justifyContent:'space-between',flexDirection:'row'}}>
                         <View style={{flex:1,alignItems:"flex-start"}}>
                             <Text
-                                style={styles.smallWord}>笔试用时 :
-                                <Text>{person.alltime ? person.alltime : '无'}</Text></Text>
+                                style={styles.smallWord}>
+                                笔试用时 :
+                                <Text>{person.alltime || '无'}</Text></Text>
                         </View>
                         <View style={{alignItems:"flex-end"}}>
                             <Text

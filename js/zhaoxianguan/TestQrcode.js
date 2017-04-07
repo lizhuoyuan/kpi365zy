@@ -1,5 +1,6 @@
 /**
  * Created by 卓原 on 2017/2/23.
+ * 二维码页面
  */
 import React, {Component} from 'react';
 import {
@@ -22,7 +23,7 @@ export default class TestQrcode extends Component {
     }
 
     static defaultProps = {
-        name: "aaa"
+        name: ""
     };
 
     back() {
