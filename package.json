@@ -50,7 +50,8 @@
     "underscore": "^1.8.3"
   },
   "devDependencies": {
-    "eslint": "^3.16.1",
+    //先注释掉,不然提示版本问题 记得放开
+   // "eslint": "^3.16.1",
     "eslint-plugin-react": "^6.10.0",
     "g": "^2.0.1"
   }
